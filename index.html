@@ -551,4 +551,739 @@
        VISÃO FUTURA
     ══════════════════════════════════════ */
     .visao { background: var(--black); padding: 6rem 1.5rem; position: relative; overflow: hidden; }
-    .visao
+    .visao::before {
+      content: '';
+      position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+      background: linear-gradient(to bottom, var(--red), var(--blue));
+    }
+    .visao-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; align-items: center;
+    }
+    .visao-quote {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800; text-transform: uppercase;
+      line-height: 1.1; color: var(--white);
+    }
+    .visao-quote .red  { color: var(--red); }
+    .visao-quote .blue { color: var(--blue-lt); }
+    .visao-sub {
+      margin-top: 1.5rem;
+      font-size: 0.93rem; font-weight: 300;
+      color: var(--gray); line-height: 1.85;
+    }
+
+    .visao-items { display: flex; flex-direction: column; gap: 1px; background: var(--divider); border: 1px solid var(--divider); border-radius: 10px; overflow: hidden; }
+    .visao-item {
+      background: var(--charcoal); padding: 1.3rem 1.5rem;
+      display: flex; gap: 1rem; align-items: flex-start;
+      transition: background 0.2s;
+    }
+    .visao-item:hover { background: var(--charcoal-lt); }
+    .visao-item-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .visao-item-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.9rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--white); margin-bottom: 0.25rem;
+    }
+    .visao-item-desc { font-size: 0.78rem; color: var(--gray); font-weight: 300; line-height: 1.5; }
+
+    /* ══════════════════════════════════════
+       DEPOIMENTOS
+    ══════════════════════════════════════ */
+    .depoimentos { padding: 6rem 1.5rem; }
+    .depoimentos-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem; margin-top: 3.5rem;
+    }
+    .depo-card {
+      background: var(--charcoal);
+      border: 1px solid var(--divider); border-radius: 10px;
+      padding: 1.8rem; position: relative;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+    .depo-card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.14); }
+    .depo-mark {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 3.5rem; font-weight: 900; line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+    .depo-card:nth-child(1) .depo-mark { color: var(--red); }
+    .depo-card:nth-child(2) .depo-mark { color: var(--blue-lt); }
+    .depo-card:nth-child(3) .depo-mark { color: var(--red); }
+    .depo-text {
+      font-size: 0.88rem; font-weight: 300;
+      color: rgba(255,255,255,0.7); line-height: 1.85;
+      margin-bottom: 1.5rem; font-style: italic;
+    }
+    .depo-author { display: flex; align-items: center; gap: 0.8rem; }
+    .depo-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--charcoal-lt);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; flex-shrink: 0;
+      border: 2px solid var(--divider);
+    }
+    .depo-name { font-size: 0.85rem; font-weight: 600; color: var(--white); letter-spacing: 0.03em; }
+    .depo-role { font-size: 0.72rem; color: var(--gray); font-weight: 300; }
+
+    /* ══════════════════════════════════════
+       CTA FINAL
+    ══════════════════════════════════════ */
+    .cta-section {
+      background: var(--charcoal);
+      border-top: 1px solid var(--divider);
+      border-bottom: 1px solid var(--divider);
+      padding: 5.5rem 1.5rem; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 20% 50%, rgba(214,40,40,0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 80% 50%, rgba(29,78,216,0.07) 0%, transparent 60%);
+    }
+    .cta-section .container { position: relative; }
+    .cta-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900; text-transform: uppercase;
+      letter-spacing: 0.02em; color: var(--white);
+      margin-bottom: 0.8rem;
+    }
+    .cta-title .red  { color: var(--red); }
+    .cta-title .blue { color: var(--blue-lt); }
+    .cta-sub {
+      font-size: 1rem; color: var(--gray);
+      font-weight: 300; margin-bottom: 2.5rem;
+    }
+    .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-blue {
+      background: var(--blue);
+      color: var(--white);
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.88rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.9rem 2.2rem;
+      border: none; border-radius: 4px;
+      cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      transition: all 0.22s;
+    }
+    .btn-blue:hover { background: var(--blue-lt); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(29,78,216,0.35); }
+
+    .btn-wpp {
+      background: #25D366; color: white;
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.88rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 0.9rem 2.2rem;
+      border: none; border-radius: 4px;
+      cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      transition: all 0.22s;
+    }
+    .btn-wpp:hover { background: #1da851; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.3); }
+
+    /* ══════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════ */
+    footer {
+      background: var(--black);
+      border-top: 1px solid var(--divider);
+      padding: 4rem 1.5rem 2rem;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 3rem; margin-bottom: 3rem; flex-wrap: wrap;
+    }
+    .footer-brand-block { max-width: 280px; }
+    .footer-logo-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.5rem; font-weight: 800;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--white); margin-bottom: 0.3rem;
+    }
+    .footer-logo-name .dot-r { color: var(--red); }
+    .footer-logo-name .dot-b { color: var(--blue-lt); }
+    .footer-tagline {
+      font-size: 0.82rem; color: var(--gray);
+      font-style: italic; margin: 0.5rem 0 1rem;
+    }
+    .footer-brand-desc { font-size: 0.8rem; color: var(--gray); font-weight: 300; line-height: 1.75; margin-bottom: 1.2rem; }
+    .footer-socials { display: flex; gap: 0.6rem; }
+    .social-btn {
+      width: 34px; height: 34px; border-radius: 6px;
+      background: var(--charcoal);
+      border: 1px solid var(--divider);
+      color: var(--gray);
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .social-btn:hover { background: var(--charcoal-lt); color: var(--white); border-color: rgba(255,255,255,0.15); }
+
+    .footer-cols {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+    }
+    .footer-col-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--white); margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--divider);
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+    .footer-links a {
+      color: var(--gray); text-decoration: none;
+      font-size: 0.83rem; font-weight: 300;
+      transition: color 0.2s; display: flex; align-items: center; gap: 0.4rem;
+    }
+    .footer-links a::before { content: '›'; color: var(--red); font-size: 0.9rem; }
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-contact-item {
+      display: flex; align-items: flex-start; gap: 0.6rem;
+      font-size: 0.82rem; color: var(--gray);
+      font-weight: 300; margin-bottom: 0.65rem; line-height: 1.5;
+    }
+    .footer-contact-item span:first-child { font-size: 0.85rem; flex-shrink: 0; }
+
+    .footer-divider { height: 1px; background: var(--divider); margin: 2.5rem 0 1.5rem; }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.73rem; color: rgba(255,255,255,0.2);
+      flex-wrap: wrap; gap: 0.5rem;
+    }
+    .footer-bottom a { color: var(--red); text-decoration: none; }
+
+    /* ══════════════════════════════════════
+       WPP FLOAT
+    ══════════════════════════════════════ */
+    .wpp-float {
+      position: fixed; bottom: 1.8rem; right: 1.8rem; z-index: 999;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none; font-size: 1.5rem;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.38);
+      transition: transform 0.25s, box-shadow 0.25s;
+      animation: wppPulse 3s ease-in-out infinite;
+    }
+    .wpp-float:hover { transform: scale(1.1); }
+    @keyframes wppPulse {
+      0%, 100% { box-shadow: 0 6px 20px rgba(37,211,102,0.38); }
+      50%       { box-shadow: 0 6px 30px rgba(37,211,102,0.6), 0 0 0 8px rgba(37,211,102,0.07); }
+    }
+
+    /* ══════════════════════════════════════
+       REVEAL ANIMATIONS
+    ══════════════════════════════════════ */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ══════════════════════════════════════
+       RESPONSIVO
+    ══════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .hero-content { grid-template-columns: 1fr; gap: 3rem; }
+      .sobre-grid, .visao-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .empresas-grid { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2)::after { display: none; }
+      .depoimentos-grid { grid-template-columns: 1fr 1fr; }
+      .footer-cols { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .section, .empresas, .processo, .visao, .depoimentos { padding: 4rem 1.2rem; }
+      .processo-steps { grid-template-columns: 1fr 1fr; }
+      .depoimentos-grid { grid-template-columns: 1fr; }
+      .footer-top { flex-direction: column; }
+      .footer-cols { grid-template-columns: 1fr; }
+      .hero-content { padding-top: 3rem; }
+    }
+    @media (max-width: 480px) {
+      .processo-steps { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .cta-btns { flex-direction: column; align-items: stretch; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <span style="display:flex;align-items:center;gap:0.4rem;font-size:0.72rem;color:var(--gray);">
+      <span class="topbar-dot"></span> IMPERSILVA HOLDING SGPS
+    </span>
+    <a href="tel:+244954288128">📞 +244 954 288 128</a>
+    <a href="https://wa.me/244954288128" target="_blank">💬 WhatsApp</a>
+    <a href="contacto.html">✉ Contacto</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a class="logo-link" href="index.html">
+        <div class="logo-wordmark">
+          <span class="logo-letters">IMPERSIL<span style="color:var(--red)">V</span><span style="color:var(--blue-lt)">Λ</span></span>
+        </div>
+        <span class="logo-sub">Holding SGPS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="projetos.html">Projectos</a></li>
+        <li><a href="consultoria.html">Consultoria</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="contacto.html" class="nav-cta">Falar Connosco</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="projetos.html">Projectos</a>
+      <a href="consultoria.html">Consultoria</a>
+      <a href="tech.html">IMPERSILVA TECH</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow-blue"></div>
+    <div class="hero-stripe"></div>
+
+    <div class="hero-content">
+      <!-- ESQUERDA -->
+      <div>
+        <div class="hero-label reveal">
+          <div class="hero-label-bar"><span></span><span></span></div>
+          Angola · Grupo Empresarial
+        </div>
+        <h1 class="hero-title reveal reveal-delay-1">
+          Entre nós,<br>fluem<br><span class="accent-red">opor</span><span class="accent-blue">tuni</span>dades
+        </h1>
+        <p class="hero-slogan reveal reveal-delay-2">
+          " Entre nós, fluem oportunidades "
+        </p>
+        <p class="hero-desc reveal reveal-delay-3">
+          Somos um grupo empresarial angolano que apoia negócios com consultoria estratégica e inovação digital. Do primeiro passo à expansão — estamos consigo em cada etapa.
+        </p>
+        <div class="hero-btns reveal reveal-delay-4">
+          <a href="sobre.html" class="btn-red">Conheça-nos →</a>
+          <a href="contacto.html" class="btn-ghost">Falar Connosco</a>
+        </div>
+      </div>
+
+      <!-- DIREITA: cards -->
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-card-accent accent-r"></div>
+          <div class="hero-card-body">
+            <div class="hero-card-title">IMPERSILVA Consultoria</div>
+            <div class="hero-card-desc">Apoio completo na criação e crescimento do seu negócio. Do zero ao topo com o Plano Escalador.</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-accent accent-b"></div>
+          <div class="hero-card-body">
+            <div class="hero-card-title">IMPERSILVA TECH</div>
+            <div class="hero-card-desc">Sites de vendas, gestão de redes e presença digital para o seu negócio crescer online.</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-accent accent-mix"></div>
+          <div class="hero-card-body">
+            <div class="hero-card-title">Plano Escalador</div>
+            <div class="hero-card-desc">Método comprovado para levar o seu negócio ao próximo nível, passo a passo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">Explorar</div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-number" data-target="120"><span class="red">0</span></span>
+        <span class="stat-label">Clientes Apoiados</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="2"><span class="blue">0</span></span>
+        <span class="stat-label">Empresas do Grupo</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="98"><span class="red">0</span></span>
+        <span class="stat-label">% Satisfação</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="50"><span class="blue">0</span></span>
+        <span class="stat-label">Projectos Digitais</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUEM SOMOS -->
+  <section class="section" id="sobre">
+    <div class="section-inner">
+      <div class="section-tag reveal">
+        <div class="tag-bars"><span></span><span></span></div>
+        Quem Somos
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Um grupo feito<br>para <span class="red">servir</span> e <span class="blue">transformar</span>
+      </h2>
+      <div class="sobre-grid">
+        <div class="sobre-text reveal">
+          <p>A <strong>IMPERSILVA HOLDING SGPS</strong> é um grupo empresarial angolano fundado com a missão de democratizar o acesso ao empreendedorismo e à tecnologia em Angola.</p>
+          <p>Reunimos dois pilares estratégicos: a <strong class="red">IMPERSILVA Consultoria</strong>, focada em guiar empresas desde a concepção até à consolidação, e a <strong class="blue">IMPERSILVA TECH</strong>, dedicada a digitalizar e amplificar a presença de negócios no mundo online.</p>
+          <p>O nosso compromisso é claro: tratamos cada cliente como parceiro. O crescimento do seu negócio é a nossa maior conquista.</p>
+          <div style="margin-top:1.5rem;">
+            <a href="sobre.html" class="btn-ghost" style="font-size:0.82rem;">Ver a nossa história →</a>
+          </div>
+        </div>
+        <div class="valores-grid reveal reveal-delay-2">
+          <div class="valor-card">
+            <div class="valor-icon">🎯 <span class="valor-bar r"></span></div>
+            <div class="valor-title">Missão</div>
+            <div class="valor-desc">Impulsionar negócios angolanos com estratégia, tecnologia e acompanhamento próximo.</div>
+          </div>
+          <div class="valor-card">
+            <div class="valor-icon">👁 <span class="valor-bar b"></span></div>
+            <div class="valor-title">Visão</div>
+            <div class="valor-desc">Ser o grupo de referência em soluções empresariais e digitais em Angola.</div>
+          </div>
+          <div class="valor-card">
+            <div class="valor-icon">🤝 <span class="valor-bar r"></span></div>
+            <div class="valor-title">Compromisso</div>
+            <div class="valor-desc">O seu sucesso é o nosso sucesso. Acompanhamos cada etapa da sua jornada.</div>
+          </div>
+          <div class="valor-card">
+            <div class="valor-icon">⚡ <span class="valor-bar b"></span></div>
+            <div class="valor-title">Inovação</div>
+            <div class="valor-desc">Soluções modernas e adaptadas à realidade do mercado angolano.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPRESAS -->
+  <section class="empresas">
+    <div class="section-inner">
+      <div class="section-tag reveal">
+        <div class="tag-bars"><span></span><span></span></div>
+        Os Nossos Projectos
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">
+        Dois pilares,<br>uma só <span class="red">vis</span><span class="blue">ão</span>
+      </h2>
+      <div class="empresas-grid">
+
+        <div class="empresa-card card-red reveal reveal-delay-2">
+          <span class="empresa-num">01</span>
+          <div class="empresa-badge badge-red">Consultoria Empresarial</div>
+          <div class="empresa-nome">IMPERSILVA</div>
+          <div class="empresa-subtitulo">Consultoria & Administração de Empresa</div>
+          <p class="empresa-desc">Apoiamos quem quer começar e quem já começou. Desde a abertura da sua empresa até à consolidação no mercado, estamos em cada etapa do percurso.</p>
+          <ul class="empresa-features">
+            <li><span class="bullet bullet-r"></span>Suporte completo na criação e registo de empresas</li>
+            <li><span class="bullet bullet-r"></span>Plano <strong>"Escalador de Empresa"</strong> — para negócios que querem crescer</li>
+            <li><span class="bullet bullet-r"></span>Consultoria estratégica e administrativa</li>
+            <li><span class="bullet bullet-r"></span>Acompanhamento contínuo para pequenos negócios</li>
+          </ul>
+          <a href="consultoria.html" class="empresa-link link-red">Saber mais ›</a>
+        </div>
+
+        <div class="empresa-card card-blue reveal reveal-delay-3">
+          <span class="empresa-num">02</span>
+          <div class="empresa-badge badge-blue">Tecnologia & Digital</div>
+          <div class="empresa-nome">IMPERSILVA <span style="color:var(--blue-lt)">|</span> TECH</div>
+          <div class="empresa-subtitulo">Soluções Tecnológicas & Customização Digital</div>
+          <p class="empresa-desc">Levamos pequenas empresas para o mundo digital. Criamos sites de vendas, gerimos redes sociais e facilitamos o contacto entre vendedor e cliente.</p>
+          <ul class="empresa-features">
+            <li><span class="bullet bullet-b"></span>Criação de sites de vendas e pedidos online</li>
+            <li><span class="bullet bullet-b"></span>Gestão e crescimento de redes sociais</li>
+            <li><span class="bullet bullet-b"></span>Visibilidade digital para negócios locais</li>
+            <li><span class="bullet bullet-b"></span>Centralização da presença online da sua empresa</li>
+          </ul>
+          <a href="tech.html" class="empresa-link link-blue">Saber mais ›</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section class="processo">
+    <div class="section-inner">
+      <div class="section-tag reveal">
+        <div class="tag-bars"><span></span><span></span></div>
+        O Nosso Processo
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">Como trabalhamos<br>consigo</h2>
+      <div class="processo-steps reveal reveal-delay-2">
+        <div class="passo">
+          <div class="passo-num">01</div>
+          <div class="passo-title">Consulta Inicial</div>
+          <div class="passo-desc">Ouvimos o seu projecto, necessidades e objectivos. Sem compromisso, sem custos.</div>
+        </div>
+        <div class="passo">
+          <div class="passo-num">02</div>
+          <div class="passo-title">Diagnóstico</div>
+          <div class="passo-desc">Analisamos a sua situação e identificamos o caminho certo para crescer.</div>
+        </div>
+        <div class="passo">
+          <div class="passo-num">03</div>
+          <div class="passo-title">Plano de Acção</div>
+          <div class="passo-desc">Desenvolvemos uma estratégia personalizada com metas claras e alcançáveis.</div>
+        </div>
+        <div class="passo">
+          <div class="passo-num">04</div>
+          <div class="passo-title">Execução</div>
+          <div class="passo-desc">Implementamos e acompanhamos cada passo para garantir resultados reais.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISÃO FUTURA -->
+  <section class="visao">
+    <div class="section-inner">
+      <div class="visao-grid">
+        <div class="reveal">
+          <div class="section-tag">
+            <div class="tag-bars"><span></span><span></span></div>
+            O Futuro que Construímos
+          </div>
+          <div class="visao-quote">
+            Queremos ser<br>o maior grupo<br>de suporte<br><span class="red">empre</span><span class="blue">sarial</span><br>de Angola.
+          </div>
+          <p class="visao-sub">
+            Temos uma visão ambiciosa: expandir as nossas soluções, alcançar mais empreendedores e digitalizar mais negócios angolanos em cada canto do país.
+          </p>
+        </div>
+        <div class="visao-items reveal reveal-delay-2">
+          <div class="visao-item">
+            <div class="visao-item-icon">🌍</div>
+            <div>
+              <div class="visao-item-title">Expansão Nacional</div>
+              <div class="visao-item-desc">Levar as nossas soluções a todas as províncias de Angola.</div>
+            </div>
+          </div>
+          <div class="visao-item">
+            <div class="visao-item-icon">📱</div>
+            <div>
+              <div class="visao-item-title">Plataforma Digital Própria</div>
+              <div class="visao-item-desc">Aplicação para gestão de pedidos e negócios dos nossos clientes.</div>
+            </div>
+          </div>
+          <div class="visao-item">
+            <div class="visao-item-icon">🎓</div>
+            <div>
+              <div class="visao-item-title">Academia IMPERSILVA</div>
+              <div class="visao-item-desc">Formação de empreendedores angolanos com conteúdos práticos e acessíveis.</div>
+            </div>
+          </div>
+          <div class="visao-item">
+            <div class="visao-item-icon">🤝</div>
+            <div>
+              <div class="visao-item-title">Rede de Parceiros</div>
+              <div class="visao-item-desc">Ecossistema de empresas parceiras para fortalecer o mercado nacional.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="section-inner">
+      <div class="section-tag reveal">
+        <div class="tag-bars"><span></span><span></span></div>
+        Depoimentos
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">
+        O que dizem os nossos <span class="red">cli</span><span class="blue">entes</span>
+      </h2>
+      <div class="depoimentos-grid">
+        <div class="depo-card reveal reveal-delay-1">
+          <div class="depo-mark">"</div>
+          <p class="depo-text">A IMPERSILVA ajudou-me a formalizar o meu negócio e a criar uma estratégia real. Em poucos meses as minhas vendas duplicaram.</p>
+          <div class="depo-author">
+            <div class="depo-avatar">👩</div>
+            <div>
+              <div class="depo-name">Maria Fernandes</div>
+              <div class="depo-role">Loja de Moda — Huambo</div>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card reveal reveal-delay-2">
+          <div class="depo-mark">"</div>
+          <p class="depo-text">A IMPERSILVA TECH criou o meu site de pedidos e agora os meus clientes encomendam sem precisar de se deslocar. Revolucionou o meu negócio.</p>
+          <div class="depo-author">
+            <div class="depo-avatar">👨</div>
+            <div>
+              <div class="depo-name">Carlos Mendes</div>
+              <div class="depo-role">Restaurante — Benguela</div>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card reveal reveal-delay-3">
+          <div class="depo-mark">"</div>
+          <p class="depo-text">Com o Plano Escalador percebi onde estava a errar e o que precisava mudar. O suporte da equipa é próximo e muito profissional.</p>
+          <div class="depo-author">
+            <div class="depo-avatar">👩</div>
+            <div>
+              <div class="depo-name">Ana Lopes</div>
+              <div class="depo-role">Serviços — Huíla</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title">Pronto para <span class="red">cres</span><span class="blue">cer</span>?</h2>
+      <p class="cta-sub">A primeira consulta é gratuita e sem compromisso. Fale connosco hoje.</p>
+      <div class="cta-btns">
+        <a href="contacto.html" class="btn-blue">📋 Solicitar Consulta</a>
+        <a href="https://wa.me/244954288128?text=Olá%20IMPERSILVA!%20Gostaria%20de%20saber%20mais%20sobre%20os%20vossos%20serviços." target="_blank" class="btn-wpp">💬 WhatsApp Directo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-block">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.7rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--white);line-height:1;margin-bottom:2px;">
+            IMPERSIL<span style="color:var(--red)">V</span><span style="color:var(--blue-lt)">Λ</span>
+          </div>
+          <div style="font-size:0.55rem;letter-spacing:0.25em;color:var(--gray);text-transform:uppercase;margin-bottom:0.5rem;">Holding SGPS</div>
+          <p class="footer-tagline">" Entre nós, fluem oportunidades "</p>
+          <p class="footer-brand-desc">Grupo empresarial angolano dedicado ao crescimento de negócios através de consultoria estratégica e soluções digitais.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" title="Instagram">📸</a>
+            <a href="#" class="social-btn" title="Facebook">📘</a>
+            <a href="#" class="social-btn" title="LinkedIn">💼</a>
+            <a href="https://wa.me/244954288128" target="_blank" class="social-btn" title="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <div class="footer-col-title">Empresa</div>
+            <ul class="footer-links">
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="projetos.html">Projectos</a></li>
+              <li><a href="sobre.html#equipa">A Nossa Equipa</a></li>
+              <li><a href="sobre.html#visao">Missão & Visão</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Serviços</div>
+            <ul class="footer-links">
+              <li><a href="consultoria.html">Consultoria</a></li>
+              <li><a href="consultoria.html#escalador">Plano Escalador</a></li>
+              <li><a href="tech.html">IMPERSILVA TECH</a></li>
+              <li><a href="tech.html#sites">Sites de Vendas</a></li>
+              <li><a href="tech.html#redes">Gestão de Redes</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Contacto</div>
+            <div class="footer-contact-item"><span>📞</span><span>+244 954 288 128</span></div>
+            <div class="footer-contact-item"><span>💬</span><span>WhatsApp disponível</span></div>
+            <div class="footer-contact-item"><span>📍</span><span>Huambo, Angola</span></div>
+            <div class="footer-contact-item"><span>🕐</span><span>Seg – Sáb: 8h às 18h</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span>© 2025 IMPERSILVA HOLDING SGPS. Todos os direitos reservados.</span>
+        <span>Desenvolvido por <a href="tech.html">IMPERSILVA TECH</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WPP -->
+  <a href="https://wa.me/244954288128?text=Olá%20IMPERSILVA!%20Gostaria%20de%20saber%20mais%20sobre%20os%20vossos%20serviços." target="_blank" class="wpp-float" title="WhatsApp">💬</a>
+
+  <script>
+    // HAMBÚRGUER
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    // REVEAL AO SCROLL
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Hero revela imediatamente
+    document.querySelectorAll('.hero .reveal').forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), 150 + i * 130);
+    });
+
+    // CONTADORES ANIMADOS
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { animateCount(e.target); counterObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-number[data-target]').forEach(el => counterObs.observe(el));
+
+    function animateCount(el) {
+      const target = +el.dataset.target;
+      const suffix = el.dataset.target >= 98 ? '%' : '+';
+      let n = 0;
+      const step = target / (1600 / 16);
+      const t = setInterval(() => {
+        n += step;
+        if (n >= target) { el.textContent = target + suffix; clearInterval(t); }
+        else { el.textContent = Math.floor(n) + suffix; }
+      }, 16);
+    }
+
+    // NAVBAR SCROLL
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      navbar.style.borderBottomColor = window.scrollY > 60
+        ? 'rgba(214,40,40,0.2)'
+        : 'rgba(255,255,255,0.07)';
+    });
+  </script>
+</body>
+</html>
