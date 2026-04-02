@@ -2,6 +2,8 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8"/>
+  <link rel="manifest" href="/IMPERSILVA.ao/manifest.json">
+  <meta name="theme-color" content="#1e3c72">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="IMPERSILVA Consultoria & Administração de Empresa — Apoio completo na criação e crescimento do seu negócio em Angola."/>
   <title>Consultoria — IMPERSILVA HOLDING SGPS</title>
@@ -884,5 +886,14 @@
     });
     document.getElementById("yr").textContent = new Date().getFullYear();
 
-  </script></body>
-</html>
+  <!-- todo o conteúdo do site -->
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/IMPERSILVA.ao/sw.js')
+      .then(reg => console.log('✅ PWA registrado:', reg))
+      .catch(err => console.log('❌ Erro PWA:', err));
+  }
+</script>
+</body>
+  </html>
