@@ -1,0 +1,285 @@
+[
+  {
+    "id": 0,
+    "nome": "Loja de Moda Online",
+    "tag": "Site de Vendas",
+    "tagClass": "tag-blue",
+    "desc": "Catálogo digital com sistema de pedidos via WhatsApp. Mais de 200 encomendas no primeiro mês.",
+    "desc_longa": "Criámos um catálogo digital completo para uma loja de moda em Huambo. O site apresenta os produtos com fotos, preços e tamanhos disponíveis. Os clientes escolhem os artigos e fazem a encomenda directamente pelo WhatsApp — sem complicações.",
+    "destaque": "200+ encomendas no primeiro mês",
+    "resultados": [
+      "200+ encomendas no 1º mês",
+      "Aumento de 60% nas vendas",
+      "Clientes de 3 províncias"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "WhatsApp API",
+      "Catálogo Digital"
+    ],
+    "img_capa": "img/site-moda.jpg",
+    "galeria": [
+      "img/site-moda.jpg",
+      "img/site-moda-2.jpg",
+      "img/site-moda-3.jpg"
+    ],
+    "url": "",
+    "cor": "blue",
+    "ano": "2024"
+  },
+  {
+    "id": 1,
+    "nome": "Restaurante & Delivery",
+    "tag": "Redes Sociais",
+    "tagClass": "tag-red",
+    "desc": "Gestão completa do Instagram e WhatsApp. Crescimento de 0 a 1.500 seguidores em 3 meses.",
+    "desc_longa": "Gerimos as redes sociais de um restaurante de delivery, criando conteúdo diário, campanhas promocionais e respondendo a clientes. O resultado foi um crescimento orgânico expressivo e aumento directo nas encomendas.",
+    "destaque": "1.500 seguidores em 3 meses",
+    "resultados": [
+      "0 → 1.500 seguidores",
+      "Crescimento orgânico",
+      "Encomendas pelo Instagram"
+    ],
+    "tecnologias": [
+      "Instagram",
+      "WhatsApp Business",
+      "Gestão de Conteúdo",
+      "Design Gráfico"
+    ],
+    "img_capa": "img/site-restaurante.jpg",
+    "galeria": [
+      "img/site-restaurante.jpg",
+      "img/site-restaurante-2.jpg"
+    ],
+    "url": "",
+    "cor": "red",
+    "ano": "2024"
+  },
+  {
+    "id": 2,
+    "nome": "Salão de Beleza",
+    "tag": "Presença Digital",
+    "tagClass": "tag-blue",
+    "desc": "Site de agendamento, Google Meu Negócio e redes sociais. Lotação completa todas as semanas.",
+    "desc_longa": "Criámos uma presença digital completa para um salão de beleza: site com sistema de agendamento, perfil no Google Meu Negócio e gestão das redes sociais. O salão passou a ter lotação completa todas as semanas.",
+    "destaque": "Lotação completa semanalmente",
+    "resultados": [
+      "Agendamentos online",
+      "Lotação completa",
+      "Presença no Google Maps"
+    ],
+    "tecnologias": [
+      "Site Web",
+      "Google My Business",
+      "Instagram",
+      "Sistema de Agendamento"
+    ],
+    "img_capa": "img/site-salao.jpg",
+    "galeria": [
+      "img/site-salao.jpg",
+      "img/site-salao-2.jpg"
+    ],
+    "url": "",
+    "cor": "blue",
+    "ano": "2024"
+  },
+  {
+    "id": 3,
+    "nome": "Loja de Celulares & Acessórios",
+    "tag": "Site de Vendas",
+    "tagClass": "tag-blue",
+    "desc": "Catálogo digital com modelos, preços e acessórios. Pedidos directos pelo WhatsApp com stock actualizado.",
+    "desc_longa": "Desenvolvemos um catálogo digital para uma loja de celulares com todos os modelos disponíveis, preços actualizados e acessórios. O cliente escolhe o produto e encomenda pelo WhatsApp — o stock é gerido directamente pelo proprietário.",
+    "destaque": "Catálogo sempre actualizado",
+    "resultados": [
+      "Catálogo digital completo",
+      "Stock em tempo real",
+      "Pedidos via WhatsApp"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "WhatsApp API",
+      "Galeria de Produtos"
+    ],
+    "img_capa": "img/site-celulares.jpg",
+    "galeria": [
+      "img/site-celulares.jpg",
+      "img/site-celulares-2.jpg",
+      "img/site-celulares-3.jpg"
+    ],
+    "url": "",
+    "cor": "blue",
+    "ano": "2024"
+  },
+  {
+    "id": 4,
+    "nome": "Loja de Produtos Cosméticos",
+    "tag": "Site de Vendas",
+    "tagClass": "tag-red",
+    "desc": "Loja online com catálogo de cosméticos, sistema de encomendas e integração com entrega ao domicílio.",
+    "desc_longa": "Criámos uma loja online elegante para uma marca de cosméticos. O site apresenta todos os produtos com fotos de qualidade, descrições e preços. As clientes encomendaram facilmente com entrega ao domicílio disponível.",
+    "destaque": "Entrega ao domicílio integrada",
+    "resultados": [
+      "Loja online profissional",
+      "Entregas ao domicílio",
+      "Catálogo visual completo"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "WhatsApp Checkout",
+      "Design Elegante"
+    ],
+    "img_capa": "img/site-cosmeticos.jpg",
+    "galeria": [
+      "img/site-cosmeticos.jpg",
+      "img/site-cosmeticos-2.jpg"
+    ],
+    "url": "",
+    "cor": "red",
+    "ano": "2024"
+  },
+  {
+    "id": 5,
+    "nome": "Loja de Perucas & Cabelos",
+    "tag": "Site de Vendas",
+    "tagClass": "tag-blue",
+    "desc": "Catálogo visual com fotos, tipos e preços. As clientes escolhem e encomendam directamente pelo site.",
+    "desc_longa": "Desenvolvemos um catálogo visual para uma loja especializada em perucas e cabelos. O site permite às clientes ver cada produto em detalhe — fotos, tipos, comprimentos e preços — e fazer a encomenda directamente.",
+    "destaque": "Catálogo visual detalhado",
+    "resultados": [
+      "Catálogo visual rico",
+      "Encomendas pelo site",
+      "Aumento de clientes"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "Galeria Visual",
+      "WhatsApp API"
+    ],
+    "img_capa": "img/site-perucas.jpg",
+    "galeria": [
+      "img/site-perucas.jpg",
+      "img/site-perucas-2.jpg"
+    ],
+    "url": "",
+    "cor": "blue",
+    "ano": "2024"
+  },
+  {
+    "id": 6,
+    "nome": "Delivery de Fast Food",
+    "tag": "Site de Vendas",
+    "tagClass": "tag-red",
+    "desc": "Menu digital com categorias, combos e bebidas. Clientes fazem pedidos online com entrega ao domicílio.",
+    "desc_longa": "Criámos um menu digital completo para um negócio de fast food. O site apresenta todas as categorias, combos e bebidas com fotos apetitosas. Os clientes fazem o pedido online e recebem em casa via WhatsApp.",
+    "destaque": "Menu digital + delivery",
+    "resultados": [
+      "Menu digital completo",
+      "Pedidos online",
+      "Entrega ao domicílio"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "Menu Digital",
+      "WhatsApp Delivery"
+    ],
+    "img_capa": "img/site-fastfood.jpg",
+    "galeria": [
+      "img/site-fastfood.jpg",
+      "img/site-fastfood-2.jpg",
+      "img/site-fastfood-3.jpg"
+    ],
+    "url": "",
+    "cor": "red",
+    "ano": "2025"
+  },
+  {
+    "id": 7,
+    "nome": "Empresa & Organização",
+    "tag": "Site Institucional",
+    "tagClass": "tag-red",
+    "desc": "Site completo para empresas — apresentação, serviços, equipa e contacto numa plataforma profissional.",
+    "desc_longa": "Desenvolvemos sites institucionais completos para empresas e organizações. Com secções de apresentação, serviços, equipa e contacto, estas páginas transmitem profissionalismo e credibilidade aos clientes e parceiros.",
+    "destaque": "Presença institucional profissional",
+    "resultados": [
+      "Credibilidade online",
+      "Site multi-página",
+      "Captação de clientes"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "Design Profissional",
+      "SEO Básico"
+    ],
+    "img_capa": "img/site-empresa.jpg",
+    "galeria": [
+      "img/site-empresa.jpg",
+      "img/site-empresa-2.jpg"
+    ],
+    "url": "",
+    "cor": "red",
+    "ano": "2025"
+  },
+  {
+    "id": 8,
+    "nome": "Centro de Formação",
+    "tag": "Site Educativo",
+    "tagClass": "tag-blue",
+    "desc": "Plataforma digital para centros de formação com cursos, inscrições online e informações para alunos.",
+    "desc_longa": "Criámos uma plataforma digital para centros de formação com listagem de cursos, datas, preços e inscrições online. Os alunos encontram toda a informação necessária e inscrevem-se directamente pelo site.",
+    "destaque": "Inscrições online automáticas",
+    "resultados": [
+      "Inscrições online",
+      "Cursos apresentados",
+      "Mais visibilidade"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "Formulário de Inscrição",
+      "Design Educativo"
+    ],
+    "img_capa": "img/site-escola.jpg",
+    "galeria": [
+      "img/site-escola.jpg",
+      "img/site-escola-2.jpg"
+    ],
+    "url": "",
+    "cor": "blue",
+    "ano": "2025"
+  },
+  {
+    "id": 9,
+    "nome": "Escritório & Consultório",
+    "tag": "Site de Serviços",
+    "tagClass": "tag-red",
+    "desc": "Site para advogados, médicos, contabilistas — agendamento, serviços e credibilidade online.",
+    "desc_longa": "Desenvolvemos sites profissionais para prestadores de serviços como advogados, médicos e contabilistas. Com sistema de agendamento, apresentação dos serviços e página de contacto, estes sites geram novos clientes automaticamente.",
+    "destaque": "Agendamentos automáticos",
+    "resultados": [
+      "Sistema de agendamento",
+      "Perfil profissional",
+      "Novos clientes"
+    ],
+    "tecnologias": [
+      "HTML/CSS/JS",
+      "GitHub Pages",
+      "Agendamento Online",
+      "Design Profissional"
+    ],
+    "img_capa": "img/site-extra.jpg",
+    "galeria": [
+      "img/site-extra.jpg",
+      "img/site-extra-2.jpg"
+    ],
+    "url": "",
+    "cor": "red",
+    "ano": "2025"
+  }
+]
