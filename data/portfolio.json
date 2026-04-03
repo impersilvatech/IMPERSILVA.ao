@@ -6,7 +6,7 @@
     "tagClass": "tag-blue",
     "desc": "Catálogo digital com sistema de pedidos via WhatsApp. Mais de 200 encomendas no primeiro mês.",
     "desc_longa": "Criámos um catálogo digital completo para uma loja de moda em Huambo. O site apresenta os produtos com fotos, preços e tamanhos disponíveis. Os clientes escolhem os artigos e fazem a encomenda directamente pelo WhatsApp — sem complicações.",
-    "destaque": "200+ encomendas no primeiro mês",
+    "destaque": "50+ encomendas no primeiro mês",
     "resultados": [
       "200+ encomendas no 1º mês",
       "Aumento de 60% nas vendas",
@@ -21,7 +21,7 @@
     "galeria": [
       "img/site-moda.jpg"
     ],
-    "url": "",
+    "url": "https://impersilvatech.github.io/Belle-Cosmeticos/",
     "cor": "blue",
     "ano": "2024"
   },
