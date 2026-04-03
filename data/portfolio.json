@@ -14,17 +14,12 @@
     ],
     "tecnologias": [
       "HTML/CSS/JS",
-      "GitHub Pages",
       "WhatsApp API",
       "Catálogo Digital"
     ],
     "img_capa": "img/site-moda.jpg",
     "galeria": [
-      "img/site-moda.jpg",
-      "img/site-moda-2.jpg",
-      "img/site-moda-4.jpg",
-      "img/site-moda-5.jpg",
-      "img/site-moda-6.jpg"
+      "img/site-moda.jpg"
     ],
     "url": "",
     "cor": "blue",
@@ -107,7 +102,6 @@
     ],
     "img_capa": "img/site-celulares.jpg",
     "galeria": [
-      "img/site-celulares.jpg",
       "img/site-celulares-2.jpg",
       "img/site-celulares-3.jpg"
     ],
