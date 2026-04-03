@@ -101,10 +101,7 @@
       "Galeria de Produtos"
     ],
     "img_capa": "img/site-celulares.jpg",
-    "galeria": [
-      "img/site-celulares-2.jpg",
-      "img/site-celulares-3.jpg"
-    ],
+    "galeria": [],
     "url": "",
     "cor": "blue",
     "ano": "2024"
