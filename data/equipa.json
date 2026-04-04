@@ -44,7 +44,10 @@
     "whatsapp": "244954288128",
     "empresa": "IMPERSILVA TECH",
     "localizacao": "Huambo, Angola",
-    "galeria": [],
+    "galeria": [
+      "img/equipa-t-gal-1.jpg",
+      "img/equipa-t-gal-2.jpg"
+    ],
     "instagram": "",
     "facebook": "",
     "tiktok": ""
