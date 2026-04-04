@@ -18,7 +18,9 @@
       "Catálogo Digital"
     ],
     "img_capa": "img/site-moda.jpg",
-    "galeria": [],
+    "galeria": [
+      "img/site-moda-1.jpg"
+    ],
     "url": "https://impersilvatech.github.io/Belle-Cosmeticos/",
     "cor": "blue",
     "ano": "2024"
