@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "nome": "Silva",
+    "nome": "Emílio Da Silva",
     "cargo": "Fundador & CEO",
     "foto": "img/equipa-ceo.jpg",
     "placeholder": "S",
@@ -19,7 +19,9 @@
     "whatsapp": "244954288128",
     "empresa": "IMPERSILVA HOLDING SGPS",
     "localizacao": "Huambo, Angola",
-    "galeria": []
+    "galeria": [
+      "img/equipa-s-gal-1.jpg"
+    ]
   },
   {
     "id": 1,
