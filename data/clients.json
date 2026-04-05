@@ -18,5 +18,15 @@
     "activo": true,
     "senha": "impersilva",
     "imagem": "img/cliente-azhvgvwq.jpg"
+  },
+  {
+    "id": "5VHTBNLR",
+    "nome": "Heh",
+    "url": "https://impersilvatech.github.io/Belle-Costicos/",
+    "tipo": "Redes Sociais",
+    "criado": "2026-04-05",
+    "activo": true,
+    "senha": "impersilva@2026",
+    "imagem": ""
   }
 ]
