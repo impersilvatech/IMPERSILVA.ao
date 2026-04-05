@@ -8,5 +8,15 @@
     "activo": true,
     "senha": "1234",
     "imagem": "img/cliente-7wkl46t95.jpg"
+  },
+  {
+    "id": "BKWY2PXJ",
+    "nome": "Heh",
+    "url": "https://impersilvatech.github.io/Belle-Cmeticos/",
+    "tipo": "Site de Vendas",
+    "criado": "2026-04-05",
+    "activo": true,
+    "senha": "impersilva@2026",
+    "imagem": "img/cliente-bkwy2pxj.jpg"
   }
 ]
