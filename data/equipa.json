@@ -1,0 +1,77 @@
+[
+  {
+    "id": 0,
+    "nome": "Silva",
+    "cargo": "Fundador & CEO",
+    "foto": "img/equipa-ceo.jpg",
+    "placeholder": "S",
+    "cor": "red",
+    "bio": "Visionário e líder do grupo. Responsável pela direcção estratégica da IMPERSILVA e pelo desenvolvimento de novos mercados.",
+    "bio_longa": "O fundador da IMPERSILVA acredita que Angola tem todo o potencial para se tornar uma potência empresarial africana. Com anos de experiência em gestão e empreendedorismo, lidera o grupo com uma visão clara: criar oportunidades reais para empresas e pessoas em toda Angola.",
+    "frase": "Entre nós, fluem oportunidades.",
+    "especialidades": [
+      "Estratégia Empresarial",
+      "Liderança",
+      "Desenvolvimento de Negócios",
+      "Empreendedorismo"
+    ],
+    "linkedin": "",
+    "whatsapp": "244954288128",
+    "empresa": "IMPERSILVA HOLDING SGPS",
+    "localizacao": "Huambo, Angola",
+    "galeria": [],
+    "instagram": "",
+    "facebook": "",
+    "tiktok": ""
+  },
+  {
+    "id": 1,
+    "nome": "Equipa Tech",
+    "cargo": "IMPERSILVA TECH",
+    "foto": "img/equipa-tech.jpg",
+    "placeholder": "T",
+    "cor": "blue",
+    "bio": "Especialistas em desenvolvimento web, gestão de redes sociais e soluções digitais personalizadas para empresas angolanas.",
+    "bio_longa": "A equipa IMPERSILVA TECH é composta por profissionais apaixonados por tecnologia e inovação digital. Desenvolvem sites de vendas, gerem redes sociais e criam soluções digitais à medida para cada cliente, sempre com foco em resultados reais.",
+    "frase": "A tecnologia certa, no momento certo.",
+    "especialidades": [
+      "Desenvolvimento Web",
+      "Redes Sociais",
+      "Sites de Vendas",
+      "Customização Digital"
+    ],
+    "linkedin": "",
+    "whatsapp": "244954288128",
+    "empresa": "IMPERSILVA TECH",
+    "localizacao": "Huambo, Angola",
+    "galeria": [],
+    "instagram": "",
+    "facebook": "",
+    "tiktok": ""
+  },
+  {
+    "id": 2,
+    "nome": "Consultores",
+    "cargo": "Consultoria Empresarial",
+    "foto": "img/equipa-consultoria.jpg",
+    "placeholder": "C",
+    "cor": "gray",
+    "bio": "Profissionais experientes em estratégia, gestão e administração de empresas, prontos para apoiar o seu negócio a crescer.",
+    "bio_longa": "A equipa de consultoria da IMPERSILVA reúne profissionais com vasta experiência em estratégia, gestão empresarial e administração. Apoiam empresas em todas as fases — da criação à expansão — com soluções práticas e resultados mensuráveis.",
+    "frase": "O seu crescimento é a nossa missão.",
+    "especialidades": [
+      "Criação de Empresas",
+      "Gestão Estratégica",
+      "Plano Escalador",
+      "Administração"
+    ],
+    "linkedin": "",
+    "whatsapp": "244954288128",
+    "empresa": "IMPERSILVA Consultoria",
+    "localizacao": "Huambo, Angola",
+    "galeria": [],
+    "instagram": "",
+    "facebook": "",
+    "tiktok": ""
+  }
+]
