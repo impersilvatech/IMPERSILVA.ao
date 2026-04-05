@@ -19,7 +19,10 @@
     "whatsapp": "244954288128",
     "empresa": "IMPERSILVA HOLDING SGPS",
     "localizacao": "Huambo, Angola",
-    "galeria": [],
+    "galeria": [
+      "img/equipa-s-gal-1.jpg",
+      "img/equipa-s-gal-2.jpg"
+    ],
     "instagram": "",
     "facebook": "",
     "tiktok": ""
